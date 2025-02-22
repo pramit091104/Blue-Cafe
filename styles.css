@@ -1,0 +1,514 @@
+body {
+    background-color: #131313;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Grape Nuts", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.001);
+    /* Light translucent effect */
+    backdrop-filter: blur(5px);
+    /* Adds blur to the background */
+    border: 2px solid transparent;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    background: rgba(58, 58, 58, 0.8);
+    /* Light translucent effect */
+    backdrop-filter: blur(5px);
+}
+
+.logo_name {
+    margin-left: 100px;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('img/Rk Logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.name {
+    font-size: small;
+}
+
+header ul {
+    width: 400px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header li {
+    margin: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover {
+    color: rgb(255, 0, 0);
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.content {
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); */
+    background-image: url('img/coffee\ banner\ 6.png');
+    padding-left: 20px;
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.button {
+    position: absolute;
+}
+
+.overlay {
+    padding-top: 100px;
+    width: 101%;
+    height: 55vh;
+    position: absolute;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.content .order {
+    padding: 10px 20px;
+    margin: 10px 59px;
+    margin: auto;
+    margin-bottom: 120px;
+    margin-left: 150px;
+    /* background-color: #4e3c32; */
+    background-color: rgba(78, 50, 60, 0.568);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+}
+
+.order {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 100;
+    font-style: normal;
+    border-radius: 20px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.order:hover {
+    background-color: rgba(78, 50, 69, 0.9);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menu h1 {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: rgb(78, 50, 60);
+    border-radius: 30px;
+    width: 170px;
+    padding: 10px;
+}
+
+.latest_menu {
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #333; */
+    width: 100%;
+    height: 120px;
+}
+
+.latest {
+    background-color: #ff0606;
+    background-size: cover;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.latest:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(360deg) scale(1.2);
+}
+
+.latest {
+    transition: all 0.3s ease-in-out;
+}
+
+#latest1 {
+    background-image: url('img/Chicken Pasta.jpg');
+
+}
+
+#latest2 {
+    background-image: url('img/lemon drink.jpg');
+}
+
+#latest3 {
+    background-image: url('img/Coffee\ latte.jpg');
+}
+
+#latest4 {
+    background-image: url('img/french\ fries.jpg');
+}
+
+#latest5 {
+    background-image: url('img/garlic\ Bread.jpg');
+}
+
+#latest6 {
+    background-image: url('img/Kfc\ chicken\ bucket.jpg');
+}
+
+#latest7 {
+    background-image: url('img//Salad.jpg');
+}
+
+#latest8 {
+    background-image: url('img/Thali.jpg');
+}
+
+
+.popular_items {
+    /* background-color: #d01010; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pitem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.bgbox {
+    position: absolute;
+    margin-top: 40px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 240px;
+    height: 280px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#bgbox1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#bgbox2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#bgbox3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#bgbox4 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+
+.pitem1 {
+    position: absolute;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 230px;
+    background-image: url('img/irish.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.pitem1:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2) rotateZ(-10deg);
+}
+
+.pitem1 {
+    transition: all 0.3s ease-in-out;
+}
+
+.pitem2 {
+    position: absolute;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 230px;
+    background-image: url('img/cappuccino1.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.pitem2:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2) rotateZ(-10deg);
+}
+
+.pitem2 {
+    transition: all 0.3s ease-in-out;
+}
+
+.pitem3 {
+    position: absolute;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 230px;
+    background-image: url('img/espresso.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+
+}
+
+.pitem3:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2) rotateZ(-10deg);
+}
+
+.pitem3 {
+    transition: all 0.3s ease-in-out;
+}
+
+.pitem4 {
+    position: absolute;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 230px;
+    background-image: url('img/mocha.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.pitem4:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2) rotateZ(-10deg);
+}
+
+.pitem4 {
+    transition: all 0.3s ease-in-out;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px 10px;
+
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.menu_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 230px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.item img:hover {
+    box-shadow: 0 4px 10px rgba(255, 60, 60, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.item img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    /* Fixed width */
+    height: 250px;
+    /* Fixed height */
+    overflow: hidden;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.offer1 {
+    display: flex;
+    width: 300%;
+    animation: slide 2s infinite;
+}
+
+.offer1 img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+
+    0%,
+    33.33% {
+        transform: translateX(0%);
+    }
+
+    33.34%,
+    66.66% {
+        transform: translateX(-500%);
+    }
+
+    66.67%,
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+footer {
+    position: relative;
+    font-size: small;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+}
+
+footer .footer_social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.location {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
