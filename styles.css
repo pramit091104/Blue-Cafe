@@ -253,18 +253,24 @@ header button {
 }
 
 .bgbox {
+    font-family: "Crafty Girls", serif;
+    font-weight: 100;
+    font-size: large;
+    color: white;
     position: absolute;
     margin-top: 40px;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background: linear-gradient(to left bottom, #70160067, #c68c61b4);
     width: 240px;
     height: 280px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #bgbox1 {
+
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
