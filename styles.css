@@ -35,11 +35,11 @@ header.sticky {
 }
 
 .logo_name {
-    margin-left: 100px;
-    width: 270px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 100px;
+    width: 270px;
     gap: 10px;
 }
 
@@ -228,6 +228,24 @@ header button {
     background-image: url('img/Thali.jpg');
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: #ff0505;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.search input{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+
 
 .popular_items {
     /* background-color: #d01010; */
@@ -385,6 +403,44 @@ header button {
     transition: all 0.3s ease-in-out;
 }
 
+
+.p_info{
+    display: none;
+    margin-top: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.p_info1{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 50%;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to left bottom, #70160067, #c68c61b4);
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+}
+
+.product{
+/* background-color: #ff0606; */
+}
+
+
+.pro_info{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
 .menu {
     text-align: center;
     padding: 20px 10px;
@@ -396,6 +452,22 @@ header button {
     font-size: 28px;
 }
 
+.promo_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.promo_heading h2 {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: rgb(78, 50, 60);
+    border-radius: 30px;
+    width: auto;
+    padding: 10px;
+}
 
 
 .promo_banner {

@@ -16,3 +16,23 @@ window.addEventListener("scroll", function () {
         header.classList.remove("sticky");
     }
 });
+
+let isVisible = false; // Track visibility state
+
+function toggle_p_info() {
+  let hiddenBox = document.getElementById("p_info");
+
+  isVisible = !isVisible; // Toggle state
+  hiddenBox.style.display = isVisible ? "flex" : "none";
+}
+
+function hideDivOnEsc(event) {
+  if (event.key === "Escape") {
+    document.getElementById("p_info").style.display = "none";
+    isVisible = false; // Reset state
+  }
+}
+
+// Event Listeners
+document.getElementById("pitem2").addEventListener("click", toggle_p_info);
+document.addEventListener("keydown", hideDivOnEsc);
