@@ -385,6 +385,18 @@ header button {
     transition: all 0.3s ease-in-out;
 }
 
+.menu {
+    text-align: center;
+    padding: 20px 10px;
+
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+
 
 .promo_banner {
 
