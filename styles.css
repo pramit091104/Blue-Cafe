@@ -31,7 +31,7 @@ header.sticky {
     transition: all 0.2s ease-in-out;
     background: rgba(58, 58, 58, 0.8);
     /* Light translucent effect */
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 .logo_name {
