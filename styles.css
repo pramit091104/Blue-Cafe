@@ -90,7 +90,7 @@ header button {
 
 .content {
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); */
-    background-image: url('./img/coffee\ banner\ 6.png');
+    background-image: url('./img/coffee/banner/6.png');
     padding-left: 20px;
     width: 100%;
     min-height: 55vh;
@@ -196,20 +196,20 @@ header button {
 }
 
 #latest1 {
-    background-image: url('img/Chicken Pasta.jpg');
+    background-image: url('./img/Chicken Pasta.jpg');
 
 }
 
 #latest2 {
-    background-image: url('img/lemon drink.jpg');
+    background-image: url('./img/lemon drink.jpg');
 }
 
 #latest3 {
-    background-image: url('img/Coffee\ latte.jpg');
+    background-image: url('./img/Coffee/latte.jpg');
 }
 
 #latest4 {
-    background-image: url('img/french\ fries.jpg');
+    background-image: url('./img/french/fries.jpg');
 }
 
 #latest5 {
